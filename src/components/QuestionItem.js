@@ -17,7 +17,7 @@ function QuestionItem({ question, onDeleteQuestion, onUpdateQuestion }) {
       .then(() => onDeleteQuestion(question))
   }
 
-  function handleUpdateChange() {
+  function handleUpdateChange(e) {
     fetch(`http://localhost:4000/questions/${question.id}`, {
       method: "PATCH",
       headers: {
@@ -25,7 +25,7 @@ function QuestionItem({ question, onDeleteQuestion, onUpdateQuestion }) {
       },
       body: JSON.stringify(
         {
-          "correctIndex": question.correctIndex
+          correctIndex: e.target.selectedIndex
         }
       )
     })

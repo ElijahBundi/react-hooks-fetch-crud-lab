@@ -54,6 +54,17 @@
       ],
       "correctIndex": "1",
       "id": 7
+    },
+    {
+      "prompt": "What is my second name",
+      "answers": [
+        "Elijah",
+        "Brotherman",
+        "naniii",
+        "Bundi"
+      ],
+      "correctIndex": 2,
+      "id": 8
     }
   ]
 }
